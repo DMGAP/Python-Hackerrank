@@ -1,0 +1,6 @@
+m=int(input())
+ms=set(map(int,input().split()))
+n=int(input())
+ns=set(map(int,input().split()))
+mns=sorted((ms.difference(ns)).union((ns.difference(ms))))
+print(*mns,sep='\n')
